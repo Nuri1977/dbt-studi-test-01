@@ -1,0 +1,15 @@
+config:
+  send_anonymous_usage_stats: false
+  partial_parse: true
+Test_13:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: nuri
+      password: Zemra25082009
+      dbname: plugin_marketplace
+      schema: plugin_marketplace
+      threads: 4

@@ -1,0 +1,12 @@
+---
+version: 2
+sources:
+- name: plugin_marketplace
+  description: postgres
+  tables:
+  - name: alembic_version
+    columns:
+    - name: version_num
+      data_tests:
+      - not_null
+      - unique

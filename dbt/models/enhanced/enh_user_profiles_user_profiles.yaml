@@ -1,0 +1,21 @@
+---
+version: 2
+sources:
+- name: enh_user_profiles
+  description: postgres
+  tables:
+  - name: user_profiles
+    columns:
+    - name: id
+      data_tests:
+      - not_null
+      - unique
+    - name: external_id
+      data_tests:
+      - not_null
+    - name: data
+      data_tests:
+      - not_null
+    - name: created_at
+      data_tests:
+      - not_null

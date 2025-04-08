@@ -1,0 +1,325 @@
+---
+safeMode: false
+tables:
+- name: "alembic_version"
+  type: "TABLE"
+  schema: "plugin_marketplace"
+  indices:
+  - name: "alembic_version_pkc"
+    schema: "plugin_marketplace"
+    tableName: "alembic_version"
+    columnNames:
+    - "version_num"
+    nonUnique: false
+    type: 3
+    ascOrDesc: "A"
+    cardinality: 0
+  columns:
+  - name: "version_num"
+    typeName: "varchar"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    primaryKey: true
+    nullable: false
+- name: "invoices"
+  type: "TABLE"
+  schema: "plugin_marketplace"
+  indices:
+  - name: "invoices_pkey"
+    schema: "plugin_marketplace"
+    tableName: "invoices"
+    columnNames:
+    - "id"
+    nonUnique: false
+    type: 3
+    ascOrDesc: "A"
+    cardinality: 0
+  columns:
+  - name: "id"
+    typeName: "uuid"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: true
+    nullable: false
+  - name: "data"
+    typeName: "jsonb"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+  - name: "created_at"
+    typeName: "timestamptz"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 35
+    scale: 6
+    precision: 35
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+- name: "packages"
+  type: "TABLE"
+  schema: "plugin_marketplace"
+  indices:
+  - name: "packages_pkey"
+    schema: "plugin_marketplace"
+    tableName: "packages"
+    columnNames:
+    - "id"
+    nonUnique: false
+    type: 3
+    ascOrDesc: "A"
+    cardinality: 471
+  columns:
+  - name: "id"
+    typeName: "uuid"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: true
+    nullable: false
+  - name: "data"
+    typeName: "jsonb"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+  - name: "created_at"
+    typeName: "timestamptz"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 35
+    scale: 6
+    precision: 35
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+- name: "purchased_products"
+  type: "TABLE"
+  schema: "plugin_marketplace"
+  indices:
+  - name: "purchased_products_pkey"
+    schema: "plugin_marketplace"
+    tableName: "purchased_products"
+    columnNames:
+    - "id"
+    nonUnique: false
+    type: 3
+    ascOrDesc: "A"
+    cardinality: 0
+  columns:
+  - name: "id"
+    typeName: "uuid"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: true
+    nullable: false
+  - name: "data"
+    typeName: "jsonb"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+  - name: "created_at"
+    typeName: "timestamptz"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 35
+    scale: 6
+    precision: 35
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+- name: "tasks"
+  type: "TABLE"
+  schema: "plugin_marketplace"
+  indices:
+  - name: "tasks_pkey"
+    schema: "plugin_marketplace"
+    tableName: "tasks"
+    columnNames:
+    - "id"
+    nonUnique: false
+    type: 3
+    ascOrDesc: "A"
+    cardinality: 0
+  columns:
+  - name: "id"
+    typeName: "uuid"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: true
+    nullable: false
+  - name: "data"
+    typeName: "jsonb"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+  - name: "created_at"
+    typeName: "timestamptz"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 35
+    scale: 6
+    precision: 35
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+- name: "user_instances"
+  type: "TABLE"
+  schema: "plugin_marketplace"
+  indices:
+  - name: "user_instances_pkey"
+    schema: "plugin_marketplace"
+    tableName: "user_instances"
+    columnNames:
+    - "id"
+    nonUnique: false
+    type: 3
+    ascOrDesc: "A"
+    cardinality: 0
+  columns:
+  - name: "id"
+    typeName: "uuid"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: true
+    nullable: false
+  - name: "data"
+    typeName: "jsonb"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+  - name: "created_at"
+    typeName: "timestamptz"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 35
+    scale: 6
+    precision: 35
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+- name: "user_profiles"
+  type: "TABLE"
+  schema: "plugin_marketplace"
+  indices:
+  - name: "user_profiles_pkey"
+    schema: "plugin_marketplace"
+    tableName: "user_profiles"
+    columnNames:
+    - "id"
+    nonUnique: false
+    type: 3
+    ascOrDesc: "A"
+    cardinality: 3
+  columns:
+  - name: "id"
+    typeName: "uuid"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: true
+    nullable: false
+  - name: "external_id"
+    typeName: "varchar"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+  - name: "data"
+    typeName: "jsonb"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+  - name: "created_at"
+    typeName: "timestamptz"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 35
+    scale: 6
+    precision: 35
+    columnProperties: []
+    autoincrement: false
+    primaryKey: false
+    nullable: false
+views: []
+databaseProductName: "PostgreSQL"
+databaseType: "postgres"
+operationLevel: "schema"
